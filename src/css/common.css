@@ -21,7 +21,7 @@ img {
   display: flex;
   margin-top: 70px;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
 }
 
 .field {
@@ -39,21 +39,5 @@ img {
   margin-top: 15px;
 }
 
-button[type='button'] {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: lightgreen;
-  border: transparent;
-  border-radius: 8px;
-}
 
-button[disabled] {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: lightgrey;
-  
-  border-radius: 8px;
-}
  
