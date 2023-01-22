@@ -16,3 +16,44 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value {
+  padding: 5px;
+  font-size: 3em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.label {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+button[type='button'] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: lightgreen;
+  border: transparent;
+  border-radius: 8px;
+}
+
+button[disabled] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: lightgrey;
+  
+  border-radius: 8px;
+}
+ 
