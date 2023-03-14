@@ -6,15 +6,17 @@ const refs = {
 let timerId = null;
 
 refs.start.addEventListener('click', () => {
+  refs.start.setAttribute('disabled', true);
+  refs.stop.removeAttribute('disabled')
   timerId = setInterval(() => {
     refs.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
-  refs.start.setAttribute('disabled', true);
 });
 
 refs.stop.addEventListener('click', () => {
-  clearInterval(timerId);
+  refs.stop.setAttribute('disabled', true)
   refs.start.removeAttribute('disabled');
+  clearInterval(timerId);
 });
 
 function getRandomHexColor() {
